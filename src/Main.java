@@ -95,4 +95,6 @@ public class Main {
         boolean isStringEqualsToAbc = string.equals("abc");
         boolean isStringEmpty = string.isEmpty();
     }
+
+
 }
