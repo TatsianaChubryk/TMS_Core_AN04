@@ -2,37 +2,31 @@ package Lesson1;
 
 public class Lesson1HomeWork {
     public static void main(String[] args) {
-        /**
-         * 1) В переменную записываем число. Надо вывести на экран сколько в этом
-         * числе цифр и положительное оно или отрицательное. Например, "это
-         * однозначное положительное число". Достаточно будет определить, является ли
-         * число однозначным, "двухзначным или трехзначным и более.
-         * */
-        int a = -311;
-        // вывод на экран
-        System.out.println("Текст на экран");
+
+        int a = 11;
         boolean isGreaterThanZero = a >= 0;
         System.out.println("Число a больше 0: " + isGreaterThanZero);
-
-        // Первый способ (более простой в реализации)
-
-        // привели "a" к положительному числу (вызвали мтеод abs и передали аргументом переменную "a")
-        // сделали для того, чтобы избавиться от минуса
-        //a = Math.abs(a);
-
-        // Integer.toString() - мы вызвали метод toString(..) с параметром "a" у класса Integer
+        a = Math.abs(a);
         String aStr = Integer.toString(a);
+        int alength = aStr.length();
+        System.out.println(alength);
 
-        // получаем длину строки методом length();
-        int length = aStr.length();
+    // а) Считаем все цифры в числе (дробную часть тоже)
+        double b = 5.55;
+        boolean isPrime = b % 1 != 0;
+        System.out.println("Число дробное: " + isPrime);
+        String bStr = Double.toString(b);
+        int blength = bStr.length();
+        System.out.println(blength - 1);
 
-        // печатаем на консоль
-        System.out.println(length);
+    // б) (посложнее) - считаем только цифры целой части
+        double c = 18.55;
+        boolean isPrimeToo = c % 1 != 0;
+        System.out.println("Число дробное: " + isPrimeToo);
+        int d = (int) c;
+        String dStr = Integer.toString(d);
+        int dlength = dStr.length();
+        System.out.println(dlength);
 
-        // advanced вариант 1-го задания
-        // А что будет, если число не целое?
-        // Задача: написать код, который правильно считает кол-во цифр в дробном числе
-        // а) Считаем все цифры в числе (дробную часть тоже)
-        // б) (посложнее) - считаем только цифры целой части
     }
 }
