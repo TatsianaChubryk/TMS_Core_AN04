@@ -18,7 +18,7 @@ public class Lesson1HomeWork {
 
         // привели "a" к положительному числу (вызвали мтеод abs и передали аргументом переменную "a")
         // сделали для того, чтобы избавиться от минуса
-        //a = Math.abs(a);
+        a = Math.abs(a);
 
         // Integer.toString() - мы вызвали метод toString(..) с параметром "a" у класса Integer
         String aStr = Integer.toString(a);
