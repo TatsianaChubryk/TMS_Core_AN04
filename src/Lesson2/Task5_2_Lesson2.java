@@ -18,8 +18,12 @@ public class Task5_2_Lesson2 {
                     break;
                 }
             }
-            if (b) System.out.println(i);
-            else b = true;
+            if (b) {
+                System.out.println(i);
+            }
+            else {
+                b = true;
+            }
         }
     }
 }

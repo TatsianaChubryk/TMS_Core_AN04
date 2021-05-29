@@ -67,7 +67,7 @@ public class Task1_Lesson2 {
         Scanner n = new Scanner(System.in);
         System.out.print("Введите число от 1 до 12: ");
         int number = n.nextInt();
-        String[] month1 = {"","Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"};
+        String[] month1 = {" ", "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
         if(number > 0 && number < month1.length) {
             System.out.println(month1[number]);
         }else {
