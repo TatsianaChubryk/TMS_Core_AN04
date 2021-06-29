@@ -55,5 +55,4 @@ public class FuelTank {
         this.fuelTankIsOpen = false;
     }
 
-
   }

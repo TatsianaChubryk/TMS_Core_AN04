@@ -59,12 +59,9 @@ public class Car {
 
     }
 
-
     public FuelTank getTank() {
         return tank;
     }
-
-
 
     public Engine getEngine() {
         return engine;
