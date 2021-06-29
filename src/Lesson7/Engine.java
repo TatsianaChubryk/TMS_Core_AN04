@@ -9,7 +9,6 @@ public class Engine {
         this.type = type;
     }
 
-
     public void startEngine(FuelTank fuelTank) throws FuelTankIsEmptyException {
         if (fuelTank.getQuantity() > 0) {
             engineStart = true;
@@ -18,7 +17,6 @@ public class Engine {
             throw new FuelTankIsEmptyException();
         }
     }
-
 
     public void stopEngine() {
         engineStart = false;
